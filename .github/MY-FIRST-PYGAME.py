@@ -1,4 +1,4 @@
-# My First PyGame, Amari Mayfield, 11/29/21 1:59, v0.1
+# My First PyGame, Amari Mayfield, 11/29/21 1:59, v0.3
 
 import pygame, sys
 from pygame.locals import *
@@ -23,3 +23,5 @@ basicFont = pygame.font.SysFont(None, 48)
 # Setup Text.
 text = basicFont.render('Hello, world!', True, WHITE, BLUE)
 textRect = text.get_rect()
+textRect.centrerx = windowSurface.get_rect().centerx
+textRect.centrerx = windowSurface.get_rect().centerx
