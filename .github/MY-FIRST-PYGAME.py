@@ -1,4 +1,4 @@
-200# My First PyGame, Amari Mayfield, 11/29/21 1:59, v0.4
+200# My First PyGame, Amari Mayfield, 11/29/21 1:59, v0.6
 import pygame, sys
 from pygame.locals import *
 
@@ -40,3 +40,6 @@ pygame.draw.polygon(windowSurface, BLUE, (0, 150), (150, 0), 1)
 
 # Draw a cricle.
 pygame.draw.circle(windowSurface, RED, (300, 50), 20,0)
+
+# Draw an ellipse.
+pygame.draw.ellipse(windowSurface, RED, (300, 250, 40, 80),1)
