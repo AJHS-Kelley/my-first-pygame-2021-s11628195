@@ -24,30 +24,43 @@ basicFont = pygame.font.SysFont(None, 48)
 # Setup Text.
 text = basicFont.render('Hello, world!', True, WHITE, BLUE)
 textRect = text.get_rect()
-textRect.centrerx = windowSurface.get_rect().centerx
-textRect.centrerx = windowSurface.get_rect().centerx
+textRect.centerx = windowSurface.get_rect().centerx
+textRect.centery = windowSurface.get_rect().centery
 
 # Fill in the background.
 windowSurface.fill(FIREBROWN)
 
 # Draw a polygon on the screen
-pygame.draw.polygon(windowSurface, FIREBROWN, ((146, 0), (291, 106), (236, 277), (56, 277), (0, 106)))
+pygame.draw.polygon(windowSurface, WHITE, ((146, 0), (291, 106), (236, 277), (56, 277), (0, 106)))
 
 # Draw line on the screen.
-pygame.draw.polygon(windowSurface, RED, (60,60), (120, 60), 4)
-pygame.draw.polygon(windowSurface, WHITE, (75, 60), (60,75),2)
-pygame.draw.polygon(windowSurface, BLUE, (0, 150), (150, 0), 1)
+pygame.draw.line(windowSurface, RED, (60, 60), (120, 60), 4)
+pygame.draw.line(windowSurface, WHITE, (75, 60), (60,75),2)
+pygame.draw.line(windowSurface, BLUE, (0, 150), (150, 0), 1)
 
 # Draw a cricle.
 pygame.draw.circle(windowSurface, RED, (300, 50), 20,0)
 
 # Draw an ellipse.
-pygame.draw.ellipse(windowSurface, RED, (300, 250, 40, 80),1)
+pygame.draw.ellipse(windowSurface, WHITE, (300, 250, 40, 80),1)
 
 # Draw the text rectangle.
-pygame.draw.rect(windowSurface, RED, (textRect.left - 20, textRect.top - 20, textRect.width + 40, textRect.height + 40))
+pygame.draw.rect(windowSurface, BLUE, (textRect.left - 20, textRect.top - 20, textRect.width + 40, textRect.height + 40))
 
 # Create Pixel Array
-pixArray = pygame.pixArray(windowSurface)
+pixArray = pygame.PixelArray(windowSurface)
 pixArray[480][380]=BLUE
 del pixArray
+
+# Draw the text onto the surface.
+windowSurface.blit(text, textRect)
+
+# Update Pygame Dsipaly
+pygame.display.update()
+
+# Run game loop
+while True:
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
