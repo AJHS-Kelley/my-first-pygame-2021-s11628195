@@ -37,3 +37,6 @@ pygame.draw.polygon(windowSurface, FIREBROWN, ((146, 0), (291, 106), (236, 277),
 pygame.draw.polygon(windowSurface, RED, (60,60), (120, 60), 4)
 pygame.draw.polygon(windowSurface, WHITE, (75, 60), (60,75),2)
 pygame.draw.polygon(windowSurface, BLUE, (0, 150), (150, 0), 1)
+
+# Draw a cricle.
+pygame.draw.circle(windowSurface, RED, (300, 50), 20,0)
