@@ -1,4 +1,4 @@
-Pygame Collision Detection Pactice, Aamri Mayfield, Jan 19, 2022, 2:32pm, v0.5
+Pygame Collision Detection Pactice, Aamri Mayfield, Jan 19, 2022, 6:32pm, v0.6
 
 import pygame, sys, random
 from pygame.locals import *
@@ -35,3 +35,23 @@ moveUp = False
 moveDown = False
 
 MOVESPEED = 6
+
+# Run the game loop
+While True:
+     # Clock for events
+     for event in pygame.event.get():
+         if event.type == QUIT:
+             pygame.quit()
+             sys.exit()
+            if event.type == KEYDOWN
+                # Change the keyboard variables
+                if event.key == K_Left or event.key == K_a:
+                    moveRight = False
+                    moveLeft = True
+                if event.key == k_Right or event.key == K_d:
+                    moveRight = True 
+                if event.key == K_UP or event.key ==K_w:
+                    moveUP = False
+                    moveDOWN = True 
+                
+        
