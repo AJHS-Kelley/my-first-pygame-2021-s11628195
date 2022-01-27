@@ -1,4 +1,4 @@
-Pygame Collision Detection Pactice, Aamri Mayfield, Jan 19, 2022, 4:027pm, v0.4
+Pygame Collision Detection Pactice, Aamri Mayfield, Jan 19, 2022, 2:32pm, v0.5
 
 import pygame, sys, random
 from pygame.locals import *
@@ -27,3 +27,11 @@ foods[]
 
 for i in range(20):\
     foods.append(pygame.Rect(random.randint(0, WINDOWWIDTH - FOOODSIZE), FOOODSIZE, FOOODSIZE))
+
+# Movement Variables
+moveleft = False
+moveRight = False
+moveUp = False
+moveDown = False
+
+MOVESPEED = 6
