@@ -52,6 +52,18 @@ While True:
                     moveRight = True 
                 if event.key == K_UP or event.key ==K_w:
                     moveUP = False
-                    moveDOWN = True 
-                
+                    moveDOWN = True
+                if event.key
+                if event.type == KEYUP
+                    if event.key == K_ESCAPE:
+                        pygame.quuit()
+                        sys.exit()
+                     # Check to see if the player has stopped moving.
+                    if event.key == K_Left or event.key == K_a:
+                         moveLeft = False
+                    if event.key == K_RIGHT or event.key == K_d:
+                         moveLight = False
+                    if event.key == K_UP or event.key ==K_w:
+                        moveUp = False
+                    if event.key == K_DOWN or event.key == K_s:                    
         
