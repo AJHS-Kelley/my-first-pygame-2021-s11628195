@@ -68,4 +68,9 @@ While True:
                     if event.key == K_DOWN or event.key == K_s:                    
                         player.top = random.randint(0, WINDOWHEIGHT - player.hieght)
                         player.left = random.randint(0, WINDOWWIDTH - player.width)
+                
+                if event.type == MOUSEBUTTONUP:
+                    foods.append(pygame.Rect)(event.pos{1}), FOODSIZE, FOODSIZE))
+
+                    
 
