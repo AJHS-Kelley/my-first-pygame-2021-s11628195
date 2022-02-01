@@ -1,4 +1,4 @@
-Pygame Collision Detection Pactice, Aamri Mayfield, Jan 19, 2022, 6:32pm, v0.6
+Pygame Collision Detection Pactice, Aamri Mayfield, Jan 19, 2022, 2:12pm, v0.7
 
 import pygame, sys, random
 from pygame.locals import *
@@ -66,4 +66,6 @@ While True:
                     if event.key == K_UP or event.key ==K_w:
                         moveUp = False
                     if event.key == K_DOWN or event.key == K_s:                    
-        
+                        player.top = random.randint(0, WINDOWHEIGHT - player.hieght)
+                        player.left = random.randint(0, WINDOWWIDTH - player.width)
+
