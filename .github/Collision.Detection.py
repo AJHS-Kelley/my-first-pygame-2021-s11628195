@@ -1,4 +1,4 @@
-Pygame Collision Detection Pactice, Aamri Mayfield, Jan 19, 2022, 2:12pm, v0.7
+Pygame Collision Detection Pactice, Aamri Mayfield, Jan 19, 2022, 5:36pm, v1.0
 
 import pygame, sys, random
 from pygame.locals import *
@@ -79,8 +79,23 @@ While True:
 
     # Draw white background on Window Surface.
     windowSurface.fill(WHITE)
-    
-                    
+
+    # Move the player. 
+    if moveDOWN and player.bottom < WINDOWHEIGHT:
+        player.top += MOVESPEED
+        if moveUp and player.top > 0:
+            player.top -= MOVESPEED
+        if moveleft and player.left > 0:
+            player.left -= MOVESPEED
+        if moveRIGHT and player.right < WINDOWWIDTH
+            player.right += MOVESPEED
+
+        # Draw the player on the surface.
+        pygame.draw.rect(windowSurface, BLACK, player)
+
+            
+
+
 
                     
 
