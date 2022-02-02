@@ -1,4 +1,4 @@
-Pygame Collision Detection Pactice, Aamri Mayfield, Jan 19, 2022, 5:52pm, v1.1
+Pygame Collision Detection Pactice, Aamri Mayfield, Feb 2, 2022, 5:56pm, v2.0
 
 import pygame, sys, random
 from pygame.locals import *
@@ -100,6 +100,11 @@ While True:
         # Draw the food.
         for i in range (len(foods)):
             pygame.draw.rect(windowSurface, GREEN, foods[i])
+
+        # Draw the window to the screen.
+        pygame.display.update()
+        mainClock.tick(40)
+
 
 
 
